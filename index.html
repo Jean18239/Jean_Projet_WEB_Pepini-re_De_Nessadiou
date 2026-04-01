@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pépinière de Nessadiou</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f8f4;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1b5e20;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1500595046743-cd271d694d30');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px black;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .container {
+      padding: 40px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #2e7d32;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      flex: 1 1 300px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #388e3c;
+    }
+
+    .logo {
+      width: 100px;
+      /* largeur du logo */
+      height: auto;
+      /* garde les proportions */
+    }
+
+    .card img {
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    .card img.ateliers {
+      width: 80%;
+      /* ajuste le pourcentage selon la taille voulue */
+      display: block;
+      margin: 0 auto;
+      /* centre l'image dans la carte */
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px black;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="Pépinière de Nessadiou.png" alt="Logo" class="logo">
+    <h1>Pépinière de Nessadiou</h1>
+    <p>Bienvenue dans notre pépinière écologique en Nouvelle-Calédonie</p>
+  </header>
+
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#produits">Produits</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Plantation et Nature</h1>
+  </section>
+
+
+  <div class="container">
+
+    <section class="section">
+      <h2>À propos de la pépinière</h2>
+      <p>
+        La Pépinière de Nessadiou est un lieu dédié à l'agriculture durable et situé avant Bourail (au bord de mer).
+        Nous faisons des plantations et des récoltes au respect de l'environnement
+        et à la production locale. Nous proposons des semis, des plants d'abres fruitiers, d'arbres saisonniers issus de
+        notre exploitation.
+        Nous vendons des arbres qui sont adaptés aux différentes saisons (fraîche, chaude).
+      </p>
+    </section>
+
+    <section class="section" id="services">
+      <h2>Nos services</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Visite">
+          <h3>Visites guidées</h3>
+          <p>Découvrez notre pépinière et nos méthodes de plantation et de récolte.</p>
+        </div>
+
+        <div class="card">
+          <img src="Pépinière et Nature.png" alt="Ateliers">
+          <h3>Ateliers pédagogiques</h3>
+          <p>Participez à des ateliers sur l'agriculture durable et la permaculture.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="Vente">
+          <h3>Vente directe</h3>
+          <p>Achetez des plantes, des arbres fruitiers ou saisonniers, des fruits directement à la pépinière.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="produits">
+      <h2>Nos produits</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Arbres</h3>
+          <a href="arbres.html">Arbres</a>
+          <p>Arbres de saison, cultivés sans pesticides.</p>
+        </div>
+
+        <div class="card">
+          <h3>Arbres fruitiers</h3>
+          <p>Juste les arbres ou les fruits sont de très bon arbres et de très bon fruits.</p>
+        </div>
+
+        <div class="card">
+          <h3>Arbres Saisonniers</h3>
+          <p>Des arbres de la NC qui sont adaptées à la saison fraîche et la saison chaude.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Email : pascalrobertmph@lagoon.nc</p>
+      <p>Téléphone : +687 75 14 66 ou 43 84 14</p>
+      <a href="#" class="btn">Nous contacter</a>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Pépinière de Nessadiou - Tous droits réservés</p>
+  </footer>
+
+</body>
+
+</html>
