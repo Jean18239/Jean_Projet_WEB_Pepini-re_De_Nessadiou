@@ -1,0 +1,35 @@
+/* Style global : police Arial, fond vert clair, pas de marge, contenu centré */
+body {
+  font-family: Arial;
+  background-color: #f4f8f4;
+  margin: 0;
+  text-align: center;
+}
+
+/* En-tête vert foncé avec texte blanc */
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px;
+}
+
+/* Image de l'arbre : taille fixe, coins arrondis et marge haute */
+img {
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Zone de contenu avec marges internes */
+.content {
+  padding: 20px;
+}
+
+/* Lien de retour vert foncé, gras, sans soulignement */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}
