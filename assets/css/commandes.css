@@ -1,0 +1,137 @@
+body.page-commandes {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.page-title {
+  background: #2e7d32;
+  color: white;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.page-title h1 {
+  top: 0;
+  margin-bottom: 8px;
+}
+
+.page-commandes .container {
+  width: min(980px, calc(100% - 32px));
+  margin: 30px auto;
+  padding: 0;
+}
+
+.table-panier,
+.table-commandes,
+.table-admin {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-panier th,
+.table-panier td,
+.table-commandes th,
+.table-commandes td,
+.table-admin th,
+.table-admin td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-panier th,
+.table-commandes th,
+.table-admin th {
+  background: #2e7d32;
+  color: white;
+}
+
+.table-panier tr:hover,
+.table-commandes tr:hover,
+.table-admin tr:hover {
+  background: #f1f1f1;
+}
+
+.table-panier img,
+.table-commandes img,
+.table-admin img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.total {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.empty-state,
+.aucune-commande {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+  font-size: 18px;
+}
+
+.empty-note {
+  text-align: center;
+  color: #777;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.badge-encours { background-color: #fff3cd; color: #856404; }
+.badge-preparation { background-color: #cce5ff; color: #004085; }
+.badge-livraison { background-color: #d4edda; color: #155724; }
+.badge-livre { background-color: #2e7d32; color: white; }
+
+.cell-product {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-action-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-action-form input {
+  width: 70px;
+  margin: 0;
+}
+
+.cart-action-form button,
+.btn-danger {
+  width: auto;
+  padding: 8px 12px;
+}
+
+.clear-cart-form {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 14px;
+}
+
+.btn-danger {
+  background: #c62828;
+}
+
+.btn-danger:hover {
+  background: #a61f1f;
+}

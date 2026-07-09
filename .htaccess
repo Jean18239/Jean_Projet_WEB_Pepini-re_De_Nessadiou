@@ -1,0 +1,16 @@
+DirectoryIndex index.php
+ErrorDocument 404 /Nessadiou/public/router.php
+
+RewriteEngine On
+RewriteBase /Nessadiou/
+
+RewriteRule ^style\.css$ public/style.css [L]
+
+RewriteRule ^public/router\.php$ public/router.php [L]
+RewriteRule ^public/.+\.php$ public/router.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^.*$ public/router.php [L,QSA]

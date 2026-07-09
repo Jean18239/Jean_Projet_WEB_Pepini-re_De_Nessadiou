@@ -1,0 +1,153 @@
+body.page-catalogue {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.catalogue-arbres {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/saman.jpg');
+}
+
+body.catalogue-fruitiers {
+  background-image: url('../images/arbres fruitiers.webp');
+}
+
+body.catalogue-saisonniers {
+  background-image: url('../images/nessadiou.webp');
+}
+
+body.catalogue-saisonniers::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.page-catalogue .catalogue-heading {
+  background-color: rgba(46, 125, 50, 0.9);
+  color: white;
+  text-align: center;
+  padding: 36px 20px;
+}
+
+.page-catalogue .catalogue-heading h1 {
+  top: 0;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.page-catalogue .container {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.page-catalogue .card {
+  background: rgba(255, 255, 255, 0.93);
+  border-radius: 10px;
+  padding: 16px;
+  width: 230px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.catalogue-saisonniers .card {
+  width: 300px;
+  padding: 20px;
+}
+
+.page-catalogue .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+.page-catalogue .card img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.catalogue-saisonniers .card img {
+  height: 180px;
+}
+
+.page-catalogue .card strong {
+  display: block;
+  margin: 10px 0;
+  color: #2e7d32;
+}
+
+.catalogue-message {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.commande-form {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.commande-form input {
+  width: 58px;
+  padding: 8px;
+}
+
+.commande-form button {
+  border: 0;
+  border-radius: 6px;
+  background: #2e7d32;
+  color: white;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.delete-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #c62828;
+  font-weight: bold;
+}
+
+.popup-success,
+.popup-error {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 9999;
+  animation: fadeOut 4s forwards;
+}
+
+.popup-success {
+  background: #2e7d32;
+}
+
+.popup-error {
+  background: #c62828;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+}

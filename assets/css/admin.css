@@ -1,0 +1,37 @@
+.table-admin select.statut-select {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #2e7d32;
+  background: white;
+  cursor: pointer;
+}
+
+.btn-update {
+  padding: 6px 14px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-update:hover {
+  background-color: #1b5e20;
+}
+
+.status-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.text-muted {
+  color: #555;
+}
+
+.access-denied {
+  color: red;
+  text-align: center;
+  margin-top: 50px;
+}
